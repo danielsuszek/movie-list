@@ -1,11 +1,14 @@
 {
 	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../source-navbar-master"
-		}
-	],
+    {
+      "path": "."
+    },
+    {
+      "path": "../source-navbar-master"
+    },
+    {
+      "path": "../../todo-list/ed-todo-list"
+    }
+  ],
   "settings": {}
 }

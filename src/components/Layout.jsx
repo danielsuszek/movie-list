@@ -1,10 +1,13 @@
 import React from 'react'
 import Header from "./Header";
 
-const Layout = () => {
+import classes from "./Layout.module.scss"
+
+const Layout = ({children}) => {
   return (
     <div>
       <Header />
+      <div className={classes.container}>{children}</div>
     </div>
   )
 }
