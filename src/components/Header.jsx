@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -38,16 +39,27 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header__content}>
         <div className={classes.header__content__logo}>
-          header
+          <h3>
+            <Link to="/">
+              <i className="fas fa-video"></i> TV SHOW SEARCH
+              <i className="fal fa-times-square"></i>
+            </Link>
+          </h3>
         </div>
       
         <nav className={`${classes.header__content__nav} ${showMenu ? classes.isMenu : ''}`}>
           <ul>
-            <li><a href="/">Page one</a></li>
-            <li><a href="/">Page two</a></li>
-            <li><a href="/">Page three</a></li>
+            <li>
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about">
+                About
+              </Link>
+            </li>
           </ul>
-          <button>CTA Page</button>
         </nav>
         <div className={classes.header__content_toggle}>
           {!showMenu ?  (<BiMenuAltRight onClick={menuToggleHandler}/>) : (<AiOutlineClose onClick={menuToggleHandler}/>)}

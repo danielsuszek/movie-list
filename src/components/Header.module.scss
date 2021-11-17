@@ -19,10 +19,15 @@
     z-index: 100;
     // border: 2px solid #f00;
     &__logo {
-      font-size: 2rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: $light;
+      h3 a {
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: $light;
+        &:hover {
+          text-decoration: underline;
+        }  
+      }
     }
     &__nav {
       border: 2px solid #f00;      
