@@ -61,9 +61,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className={classes.header__content_toggle}>
+        {/* <div className={classes.header__content_toggle}>
           {!showMenu ?  (<BiMenuAltRight onClick={menuToggleHandler}/>) : (<AiOutlineClose onClick={menuToggleHandler}/>)}
-        </div>
+        </div> */}
       </div>
     </header>
   )
