@@ -3,10 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import "./sass/main-import.scss";
+import ShowsState from "./context/ShowsState";
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ShowsState>
+    <Router>
+      <App />
+    </Router>
+  </ShowsState>,
   document.getElementById("root")
 );
