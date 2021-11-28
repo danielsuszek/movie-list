@@ -7,11 +7,12 @@ const Searchbar = () => {
   const showsContext = useContext(ShowsContext)
   const {searchShows} = showsContext
   
-  searchShows()
-  
   return (
     <div className={classes.searchbar}>
-      searchbar    
+      <input
+        type="text"
+      ></input>
+      <button onClick={searchShows}>Search</button>
     </div>
   )
 }

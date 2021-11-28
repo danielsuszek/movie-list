@@ -1,40 +1,9 @@
-import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
 
 import classes from "./Header.module.scss";
 
 const Header = () => {  
-  const [showMenu, setShowMenu] = useState(false)
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined
-  })
-  
-  const menuToggleHandler = () => {
-    setShowMenu((showMenu) => !showMenu)
-  }
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      })
-    }
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-  
-  useEffect(() => {
-    if (windowSize.width > 768 && showMenu) {
-      setShowMenu(false)
-    }
-  }, [windowSize.width, showMenu])
-  
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
@@ -47,7 +16,7 @@ const Header = () => {
           </h3>
         </div>
       
-        <nav className={`${classes.header__content__nav} ${showMenu ? classes.isMenu : ''}`}>
+        <nav className={classes.header__content__nav}>
           <ul>
             <li>
               <Link to="/">

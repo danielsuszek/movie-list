@@ -6,7 +6,8 @@
 body {
   width: 100vw;
   font-family: $Poppins;
-  color: $dark;
+  background-color: $dark;
+  color: $light;
 }
 
 #root {
@@ -14,11 +15,3 @@ body {
 }
 
 
-@mixin breakpoint($point) {
-  @if $point == md {
-      // 768px
-      @media (min-width: 768px) {
-          @content;
-      }
-  }
-}
