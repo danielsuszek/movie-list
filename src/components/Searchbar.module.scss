@@ -3,9 +3,21 @@
 .searchbar {
   margin: 0 auto;
   width: 80vw;
-  @include border($gray);
+  // @include border($gray);
   padding: 20px;
-  // color: green;
-  
-  // margin: 20px;
+  input, button {
+    padding: 10px;
+    font-size: 15px;
+
+  }
+  input {
+    width: 70%;
+    outline: none;
+  }
+  button {
+    margin-left: 20px;
+    width: 150px;
+    border-radius: 0;
+    border: none;
+  }
 }
