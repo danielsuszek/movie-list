@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 
 import classes from "./Searchbar.module.scss"
 import ShowsContext from '../context/showsContext'
+import Alert from './Alert'
 
 const Searchbar = () => {
   const showsContext = useContext(ShowsContext)
@@ -19,6 +20,7 @@ const Searchbar = () => {
   
   return (
     <div className={classes.searchbar}>
+      <Alert type="danger" message="Wprowadź tekst"/>
       <form onSubmit={onSubmitHandler}>
         <input
           type="text"

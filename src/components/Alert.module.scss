@@ -1,0 +1,11 @@
+@import '../sass/main-import.scss';
+
+.alert {
+  width: 70vw;
+  padding: 3px;
+  color: $danger;
+  font-size: 18px;
+  i {
+    margin-right: 5px;
+  }
+}
