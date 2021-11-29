@@ -16,7 +16,6 @@
         padding: 20px;
         font-size: 2rem;
         font-weight: bold;
-        text-decoration: none;
         color: $light;
         &:hover {
           text-decoration: underline;
@@ -25,7 +24,7 @@
     }
     &__nav {
       // @include border($gray);   
-      margin-right: 20%;   
+      margin-right: 16%;   
       ul {
         display: flex;
         list-style: none;

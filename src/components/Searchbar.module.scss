@@ -13,11 +13,15 @@
   input {
     width: 70%;
     outline: none;
+    background-color: $gray;
+    border: none;
   }
   button {
     margin-left: 20px;
     width: 150px;
     border-radius: 0;
     border: none;
+    background-color: $gray;
+    cursor: pointer;
   }
 }

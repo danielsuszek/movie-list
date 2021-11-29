@@ -12,11 +12,13 @@ const ShowsState = (props) => {
   
   const [state, dispatch] = useReducer(ShowsReducer, initialState)
   
-  const searchShows = async () => {
+  const searchShows = async (searchTerm) => {
 
     const {data} = await axios.get(
-      `https://api.tvmaze.com/search/shows?q=girls`
+      `https://api.tvmaze.com/search/shows?q=${searchTerm}`
     );
+    
+    // console.log(data);
     
     dispatch({
       type: SEARCH_SHOWS,
@@ -26,7 +28,7 @@ const ShowsState = (props) => {
 
   return (
     <ShowsContext.Provider value={{ 
-      state,
+      shows: state.shows,
       searchShows
      }}>
       {props.children}

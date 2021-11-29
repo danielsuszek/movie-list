@@ -1,15 +1,25 @@
-import React from "react";
+import { useContext } from "react";
+
 
 import classes from "./Home.module.scss";
 
 import Searchbar from "../components/Searchbar";
+import ShowsContext from "../context/showsContext";
 
 const Home = () => {
+  const showsContext = useContext(ShowsContext)
+
+  const { shows } = showsContext
+   
+  console.log(shows);
+  
   return (
     <div className={classes.homepage}>
       <Searchbar />
-      <br />
-      {/* <p>Homepage</p> */}
+      <div className={classes.homepage__list}>
+
+      </div>
+      
     </div>
   )
 };
