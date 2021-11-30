@@ -9,13 +9,18 @@ const Searchbar = () => {
   const {searchShows} = showsContext
   
   const [searchTerm, setSearchTerm] = useState('')
+  const [fieldIsEmpty, setFieldIsEmpty] = useState(false)
   
   const onSubmitHandler = (e) => {
     e.preventDefault()
+    
+    if(searchTerm === "") {
 
-    searchShows(searchTerm)
+    } else {
+      searchShows(searchTerm)
+      setSearchTerm("")
+    }
 
-    setSearchTerm("")
   }
   
   return (
