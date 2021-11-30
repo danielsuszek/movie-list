@@ -11,26 +11,33 @@ const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [fieldIsEmpty, setFieldIsEmpty] = useState(false)
   
+  const onChangeHandler = (e) => {
+    setSearchTerm(e.target.value)
+    setFieldIsEmpty(false)
+  }
+  
   const onSubmitHandler = (e) => {
     e.preventDefault()
     
     if(searchTerm === "") {
-
+      setFieldIsEmpty(true)
     } else {
       searchShows(searchTerm)
-      setSearchTerm("")
+      setFieldIsEmpty(false)
     }
-
   }
   
   return (
     <div className={classes.searchbar}>
-      <Alert type="danger" message="Wprowadź tekst"/>
+      <div className={classes.searchbar__errorSpace}>
+        {fieldIsEmpty && <Alert message="Wprowadź tekst" fieldIsEmpty={fieldIsEmpty}/>}
+      </div>
       <form onSubmit={onSubmitHandler}>
         <input
           type="text"
           placeholder="Wyszukaj serial"
-          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
+          onChange={onChangeHandler}
         />
         <button type="submit">Search</button>
       </form>

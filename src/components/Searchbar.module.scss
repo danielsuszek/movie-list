@@ -5,6 +5,12 @@
   width: 80vw;
   // @include border($gray);
   padding: 20px;
+
+  &__errorSpace {
+      width: 70vw;
+      height: 35px;
+      padding: 3px;
+  }
   input, button {
     padding: 10px;
     font-size: 15px;
