@@ -1,10 +1,26 @@
+@import '../sass/main-import.scss';
+
 .listItem {
   border: 1px dotted #aaa;
   margin: 20px;
   padding: 10px;
+  width: 240px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
   img {
     width: 210px;
     height: 295px;
     object-fit: cover;
   }
+  div 
+    h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    color: $primary;
+    padding: 2px;
+    }
+    h5 {
+      padding: 2px;
+    }
 }

@@ -7,7 +7,7 @@ const ListItem = ({id, name, image, rating}) => {
     <Link to={`/singleshow/${id}`} className={classes.listItem}>
       <img src={image} alt={name} />
       <div >
-        <h4>{name}</h4>
+        <h4 title={name}>{name}</h4>
         <h5>{rating}</h5>
       </div>
     </Link>
