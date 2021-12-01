@@ -1,7 +1,6 @@
 @import "./Header.module.scss";
 
 .container {
-  height: calc(100vh - #{$headerHeight});
   background: $main-bg;
   display: flex;
   justify-content: center;

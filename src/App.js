@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/singlemovie/:id" element={<Details />}/>
+        <Route path="/singleshow/:id" element={<Details />}/>
       </Routes>
     </Layout>
   );
