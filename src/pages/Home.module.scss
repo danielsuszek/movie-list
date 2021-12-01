@@ -3,11 +3,11 @@
 .homepage {
   width: 100vw;
   padding: 20px;
-  border: 2px solid #0f0;
+  border: 2px solid #aaa;
   &__list {
     width: 80vw;
     margin: 0 auto;
-    border: 1px dotted #f00;
+    border: 1px dotted #aaa;
     display: flex;
     flex-wrap:wrap;
   }
