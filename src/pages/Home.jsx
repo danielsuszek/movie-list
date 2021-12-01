@@ -33,7 +33,7 @@ const Home = () => {
               rating={
                 item.show.rating.average
                   ? item.show.rating.average
-                  : "No rating"
+                  : "Brak oceny"
               }
 
             />

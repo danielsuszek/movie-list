@@ -10,7 +10,7 @@ const ListItem = ({id, name, image, rating}) => {
       </div>
       <div >
         <h4 title={name}>{name}</h4>
-        <h5>{rating}</h5>
+        <h5>Ocena:&nbsp;{rating}</h5>
       </div>
     </Link>
   )
