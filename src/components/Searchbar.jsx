@@ -38,6 +38,7 @@ const Searchbar = () => {
           placeholder="Wyszukaj serial"
           value={searchTerm}
           onChange={onChangeHandler}
+          autoFocus
         />
         <button type="submit">Search</button>
       </form>

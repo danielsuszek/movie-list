@@ -4,30 +4,44 @@
   margin: 0 auto;
   width: 80vw;
   // @include border($gray);
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 
   &__errorSpace {
       width: 70vw;
       height: 35px;
       padding: 3px;
   }
-  input, button {
-    padding: 10px;
-    font-size: 15px;
 
+  form {
+    display: flex;
+    input, button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: $gray;
+      border: none;
+      color: $black;
+    }
+    input {
+      flex-basis: 60%;
+      outline: none;
+    }
+    button {
+      flex-basis: 250px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
   }
-  input {
-    width: 70%;
-    outline: none;
-    background-color: $gray;
-    border: none;
-  }
-  button {
-    margin-left: 20px;
-    width: 150px;
-    border-radius: 0;
-    border: none;
-    background-color: $gray;
-    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .searchbar {
+    form {
+      flex-direction: column;
+      button {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
   }
 }
