@@ -22,10 +22,14 @@
       color: $primary;
       padding: 2px;
       }
-      span {
-        margin-right: 6px;
-        color: $orange;
-        font: 14px;
+      &__genres {
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+          margin-right: 6px;
+          color: $orange;
+          font: 14px;
+        }
       }
       h5 {
         padding: 2px;

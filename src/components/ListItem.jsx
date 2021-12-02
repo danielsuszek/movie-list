@@ -10,7 +10,7 @@ const ListItem = ({id, name, image, genres, rating}) => {
       </div>
       <div className={classes.listItem__content}>
         <h4 title={name}>{name}</h4>
-        <p>
+        <p className={classes.listItem__content__genres} title={genres}>
           {genres.map((genre) => 
             <span key={genre} >{genre}</span>
           )}
