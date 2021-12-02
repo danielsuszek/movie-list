@@ -1,0 +1,29 @@
+@import "../sass/main-import.scss";
+
+.pageDetails {
+  margin: 0 auto;
+  width: 50vw;
+  color: $light;
+  border: 1px solid #aaa;
+  &__content {
+    display: flex;
+    &__imgWrapper {
+      width: 240px;
+      height: 400px;
+      border: 2px solid #aaa;
+      // flex-basis: 30%;
+      img {
+        width: 210px;
+        height: 295px;
+        object-fit: cover;
+      }
+    }
+    &__details {
+  
+    }
+  }
+  &__showGenres {
+      margin-right: 4px;
+  }
+}
+

@@ -3,11 +3,9 @@
 .homepage {
   width: 100vw;
   padding: 20px;
-  border: 2px solid #aaa;
   display: flex;
   flex-direction: column;
   &__list {    
-    border: 3px dotted #aaa;
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;

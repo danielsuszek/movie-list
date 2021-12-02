@@ -29,13 +29,16 @@ const Home = () => {
                   ? item.show.image.medium
                   : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"
               }
-
+              genres={
+                item.show.genres 
+                  ? item.show.genres
+                  : ['']
+              }
               rating={
                 item.show.rating.average
                   ? item.show.rating.average
                   : "Brak oceny"
               }
-
             />
           )
         })}

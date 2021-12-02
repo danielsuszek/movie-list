@@ -15,15 +15,21 @@
       object-fit: cover;
     }
   }
-  div 
-    h4 {
-    white-space: nowrap;
-    overflow: hidden;
-    color: $primary;
-    padding: 2px;
-    }
-    h5 {
+  &__content {
+      h4 {
+      white-space: nowrap;
+      overflow: hidden;
+      color: $primary;
       padding: 2px;
-      color: $light;
-    }
+      }
+      span {
+        margin-right: 6px;
+        color: $orange;
+        font: 14px;
+      }
+      h5 {
+        padding: 2px;
+        color: $light;
+      }
+  }
 }

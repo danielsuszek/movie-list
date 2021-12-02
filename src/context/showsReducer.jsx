@@ -1,4 +1,8 @@
-import { SEARCH_SHOWS } from './actionTypes'
+import { 
+  SEARCH_SHOWS, 
+  SET_SINGLE_SHOW,
+  CLEAR_SINGLE_SHOW
+} from './actionTypes'
 
 const showsReducer = (state, action) => {
   switch (action.type) {
@@ -7,9 +11,21 @@ const showsReducer = (state, action) => {
         ...state,
         shows: action.payload
       }
+    case SET_SINGLE_SHOW: 
+      return {
+        ...state,
+        singleShow: action.payload
+      }  
+    case CLEAR_SINGLE_SHOW:
+      return {
+        ...state,
+        singleShow: {}
+      }
     default:
       return state
   }
 }
+
+
 
 export default showsReducer
