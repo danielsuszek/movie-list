@@ -1,5 +1,21 @@
 @import '../sass/main-import.scss';
 
 .about {
-  // color: #f00;
+  h1 {
+    font-size: 40px;
+    padding: 40px  40px 40px 0;
+  }
+  
+  h3 {
+    margin: 15px;
+  }
+  ul {
+    padding: 40px;
+    li {
+      padding: 6px;
+      a {
+        padding-left: 10px;
+      }
+    }
+  }
 }

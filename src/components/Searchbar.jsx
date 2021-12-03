@@ -35,7 +35,7 @@ const Searchbar = () => {
       <form onSubmit={onSubmitHandler}>
         <input
           type="text"
-          placeholder="Wyszukaj serial"
+          placeholder="Wpisz angielski tytuł serialu"
           value={searchTerm}
           onChange={onChangeHandler}
           autoFocus
