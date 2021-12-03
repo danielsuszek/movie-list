@@ -1,29 +1,30 @@
 @import '../sass/main-import.scss';
 
 .header {
-  margin: 40px auto 0;
+  margin: auto 0;
+  padding: 40px 0;
   height: $headerHeight;
-  width: 80vw;
-  // background-color: $dark;
+  // width: 100vw;
+  background-color: $dark;
   color: $light;
+  padding-left: 5%;
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     &__logo {      
-      // @include border($gray);
       h3 a {
         padding: 20px;
         font-size: 2rem;
         font-weight: bold;
         color: $light;
+      
         &:hover {
           text-decoration: underline;
         }  
       }
     }
     &__nav {
-      // @include border($gray);   
       margin-right: 16%;   
       ul {
         display: flex;

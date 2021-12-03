@@ -32,7 +32,6 @@ const Details = () => {
   
   return (
     <div className={classes.pageDetails}>
-      <h2>Show details</h2>
       <div className={classes.pageDetails__content}>
         <div className={classes.pageDetails__content__imgWrapper}>
           <img src={imageSrc} alt="" />
