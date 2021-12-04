@@ -1,6 +1,6 @@
 import { useReducer } from 'react'
 import axios from "axios";
-import { CLEAR_SINGLE_SHOW, SEARCH_SHOWS, SET_SINGLE_SHOW } from './actionTypes'
+import { CLEAR_SINGLE_SHOW, SEARCH_SHOWS, SET_SINGLE_SHOW, SET_IS_SEARCHED } from './actionTypes'
 
 import ShowsContext from './showsContext'
 import ShowsReducer from './showsReducer'
@@ -8,7 +8,8 @@ import ShowsReducer from './showsReducer'
 const ShowsState = (props) => {
   const initialState = {
     shows: [],
-    singleShow: {}
+    singleShow: {},
+    isSearched: false
   }
   
   const [state, dispatch] = useReducer(ShowsReducer, initialState)
@@ -44,13 +45,20 @@ const clearSingleShow = () => {
   })
 }
 
+const setIsSearchedFalse = () => {
+  dispatch({
+    type: SET_IS_SEARCHED    
+  })
+}
 return (
     <ShowsContext.Provider value={{ 
       shows: state.shows,
       singleShow: state.singleShow,
+      isSearched: state.isSearched,
       searchShows,
       getSingleShow,
       clearSingleShow,
+      setIsSearchedFalse
      }}>
       {props.children}
     </ShowsContext.Provider>

@@ -10,7 +10,7 @@ const Header = () => {
         <div className={classes.header__content__logo}>
           <h3>
             <Link to="/">
-              <i className="fas fa-video"></i> WYSZUKIWARKA SERIALI (ENG)
+              <i className="fas fa-video"></i> WYSZUKIWARKA SERIALI
               <i className="fal fa-times-square"></i>
             </Link>
           </h3>
@@ -30,9 +30,6 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        {/* <div className={classes.header__content_toggle}>
-          {!showMenu ?  (<BiMenuAltRight onClick={menuToggleHandler}/>) : (<AiOutlineClose onClick={menuToggleHandler}/>)}
-        </div> */}
       </div>
     </header>
   )

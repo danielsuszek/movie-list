@@ -8,6 +8,9 @@
     },
     {
       "path": "../source-navbar-master"
+    },
+    {
+      "path": "../../todo-list/ed-todo-list"
     }
   ],
   "settings": {}

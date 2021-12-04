@@ -6,15 +6,15 @@ import Alert from './Alert'
 
 const Searchbar = () => {
   const showsContext = useContext(ShowsContext)
-  const {searchShows} = showsContext
+  const {searchShows, shows, isSearched, setIsSearchedFalse } = showsContext
   
   const [searchTerm, setSearchTerm] = useState('')
   const [fieldIsEmpty, setFieldIsEmpty] = useState(false)
-  const [notMovieFound, setNotMovieFound] = useState(false)
   
   const onChangeHandler = (e) => {
     setSearchTerm(e.target.value)
     setFieldIsEmpty(false)
+    setIsSearchedFalse()
   }
   
   const onSubmitHandler = (e) => {
@@ -26,14 +26,13 @@ const Searchbar = () => {
       searchShows(searchTerm)
       setFieldIsEmpty(false)
     }
-
-
   }
   
   return (
     <div className={classes.searchbar}>
       <div className={classes.searchbar__errorSpace}>
-        {fieldIsEmpty && <Alert message="Wprowadź tekst" fieldIsEmpty={fieldIsEmpty}/>}
+        {fieldIsEmpty && <Alert message="Wprowadź tekst"/>}
+        {shows.length === 0 && isSearched && <Alert message="Nie znaleziono serialu"/>}
       </div>
       <form onSubmit={onSubmitHandler}>
         <input
