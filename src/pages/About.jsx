@@ -19,7 +19,11 @@ const About = () => {
         </ul>
         <h3>Autor:&nbsp;&nbsp;Daniel Suszek</h3>
         <h3>e-mail:&nbsp;&nbsp;danielsuszek@gmail.com</h3>
-        <h3>Strona:&nbsp;&nbsp;danielsuszek.pl</h3>
+        <div className={classes.about__dspage}>Strona autora:&nbsp;&nbsp;
+          <a href="http://danielsuszek.pl" target="_blank" rel="noreferrer">
+            danielsuszek.pl
+          </a>
+        </div>
       </div>
     )
 };

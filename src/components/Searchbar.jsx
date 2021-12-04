@@ -10,6 +10,7 @@ const Searchbar = () => {
   
   const [searchTerm, setSearchTerm] = useState('')
   const [fieldIsEmpty, setFieldIsEmpty] = useState(false)
+  const [notMovieFound, setNotMovieFound] = useState(false)
   
   const onChangeHandler = (e) => {
     setSearchTerm(e.target.value)
@@ -25,6 +26,8 @@ const Searchbar = () => {
       searchShows(searchTerm)
       setFieldIsEmpty(false)
     }
+
+
   }
   
   return (
@@ -40,7 +43,7 @@ const Searchbar = () => {
           onChange={onChangeHandler}
           autoFocus
         />
-        <button type="submit">Search</button>
+        <button type="submit">Szukaj</button>
       </form>
     </div>
   )

@@ -10,7 +10,7 @@ const Header = () => {
         <div className={classes.header__content__logo}>
           <h3>
             <Link to="/">
-              <i className="fas fa-video"></i> TV SHOW SEARCH
+              <i className="fas fa-video"></i> WYSZUKIWARKA SERIALI (ENG)
               <i className="fal fa-times-square"></i>
             </Link>
           </h3>
@@ -20,12 +20,12 @@ const Header = () => {
           <ul>
             <li>
               <Link to="/">
-                Home
+                Strona głowna
               </Link>
             </li>
             <li>
               <Link to="/about">
-                About
+                O stronie
               </Link>
             </li>
           </ul>
