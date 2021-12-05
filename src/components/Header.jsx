@@ -10,8 +10,7 @@ const Header = () => {
         <div className={classes.header__content__logo}>
           <h3>
             <Link to="/">
-              <i className="fas fa-video"></i> WYSZUKIWARKA SERIALI
-              <i className="fal fa-times-square"></i>
+              <i className="fas fa-video"></i>&nbsp;<span>WYSZUKIWARKA</span>&nbsp;<span>SERIALI</span>
             </Link>
           </h3>
         </div>
@@ -26,6 +25,11 @@ const Header = () => {
             <li>
               <Link to="/about">
                 O stronie
+              </Link>
+            </li>
+            <li>
+              <Link to="/about">
+                Git
               </Link>
             </li>
           </ul>
