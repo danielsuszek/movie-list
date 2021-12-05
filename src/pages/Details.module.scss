@@ -3,21 +3,21 @@
 .pageDetails {
   margin: 0 auto;
   padding: 50px;
-  width: 50vw;
+  width: 60vw;
   color: $light;
   // border: 1px solid #aaa;
   &__content {
     display: flex;
+    justify-content: space-between;
     &__imgWrapper {
       width: 240px;
       height: 300px;
-      // border: 2px solid #aaa;
       // flex-basis: 30%;
       img {
         width: 210px;
         height: 295px;
         object-fit: cover;
-        border: 1px dotted #aaa;
+        border: 1px dotted #aaa;        
       }
     }
     &__details {
@@ -29,3 +29,23 @@
   }
 }
 
+@media only screen and (max-device-width: 1200px) {
+  .pageDetails {
+    width: 80vw;
+    &__content {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 992px) {
+  .pageDetails {
+    width: 80vw;
+    &__content {
+      flex-direction: column;
+      &__imgWrapper {
+        padding-left: 20px;
+      }
+    }
+  }
+}
