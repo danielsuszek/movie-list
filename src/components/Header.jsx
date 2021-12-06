@@ -30,7 +30,7 @@ const Header = () => {
             <li>
               <a href="https://github.com/danielsuszek/movie-list"
                 target="_blank" rel="noreferrer">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
             </li>
           </ul>
