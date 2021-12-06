@@ -5,7 +5,19 @@
     font-size: 40px;
     padding: 40px  40px 40px 0;
   }
-  
+  h4 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+    a {
+      i {
+        margin-left: 20px;
+        font-size: 3rem;
+        color: $primary;
+      }
+    }
+  }
   h3 {
     margin: 15px;
   }

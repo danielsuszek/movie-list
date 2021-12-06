@@ -4,6 +4,13 @@ import classes from './About.module.scss'
 const About = () => {
     return (
       <div className={classes.about}>
+        <h4>Kod źródłowy github:
+          <a href="https://github.com/danielsuszek/movie-list"
+                  target="_blank" rel="noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+
+        </h4>
         <h1>O stronie:</h1>
         <h2>Strona została napisana przy użyciu:</h2>
         <ul>
